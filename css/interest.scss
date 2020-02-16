@@ -1,0 +1,48 @@
+.interest {
+    &__title {
+        display: inline-block;
+        text-align: left;
+        margin: 30px 10px;
+        background-color: #ffffff;
+
+        @media (min-width: 768px) {
+            margin: 30px 25px;
+        }
+        @media (min-width: 992px) {
+            width: 255px;
+            margin: 70px 25px;
+        }
+        @media (min-width: 1200px) {
+            width: 300px;
+            margin: 80px 25px;
+        } 
+        &-item {
+            color: #566366;
+            margin-bottom: 15px;
+            font: {
+                family: RobotoBolt;
+                weight: 600;
+                size: 25px;
+            }
+            text: {
+                transform: uppercase;
+                align: center;
+            }
+
+            @media (min-width: 768px) {
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+            @media (min-width: 992px) {
+                display: inline-block;
+            }
+        }  
+        &-context {
+            color: #b6b6b6;
+            font: {
+                family: RobotoRegular;
+                size: 18px;
+            }
+        }
+    }
+}
