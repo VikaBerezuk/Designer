@@ -1,3 +1,10 @@
+.header__content, .header__menu-Item {
+  font-family: RobotoBold;
+  font-size: 16px; }
+  .header__content:hover, .header__menu-Item:hover {
+    color: #2ca260;
+    cursor: pointer; }
+
 * {
   box-sizing: border-box; }
 
@@ -71,7 +78,7 @@ h1 {
     .page {
       height: 750px; } }
   .page-a {
-    margin-top: -125px 0 5px; }
+    margin: -125px 0px 5px; }
     @media (min-width: 414px) {
       .page-a {
         margin-top: -145px; } }
@@ -94,7 +101,7 @@ h1 {
     margin-top: -9px;
     font-size: 20px; }
 
-a {
+.a {
   display: inline-block;
   font-size: 20px;
   text-decoration: none;
@@ -103,111 +110,145 @@ a {
   border: 1px solid white;
   padding: 8px 10px; }
   @media (min-width: 414px) {
-    a {
+    .a {
       margin-left: 37%;
       padding: 10px 16px; } }
   @media (min-width: 768px) {
-    a {
+    .a {
       margin-left: 40%;
       padding: 14px 33px; } }
   @media (min-width: 992px) {
-    a {
+    .a {
       font-size: 28px;
       margin-left: 41%;
       padding: 17px 40px; } }
   @media (min-width: 1200px) {
-    a {
+    .a {
       font-size: 33px;
       margin-left: 44%;
       padding: 10px 20px; } }
-  a:hover {
+  .a:hover {
     background-color: #2ecc71;
     color: #252e30; }
 
 .header {
-  width: 100%;
   color: #ffffff;
   background-color: #252e30;
   position: sticky;
   top: 0;
-  text-transform: uppercase;
-  text-align: center; }
-  .header__mark {
-    display: inline-block;
-    background-color: #4b5456;
-    padding: 4px 10px;
-    margin: 10px 6px 10px -10px;
-    vertical-align: middle;
-    font-family: RobotoBold;
-    font-size: 20px; }
-    @media (min-width: 768px) {
-      .header__mark {
-        padding: 5px 12px;
-        margin: 15px 10px 15px -15px;
-        font-size: 30px; } }
-  .header__title {
-    display: inline-block;
-    vertical-align: middle;
-    font-family: RobotoBold;
-    font-size: 25px; }
-    @media (min-width: 992px) {
-      .header__title {
-        font-size: 30px;
-        margin-right: 90px; } }
-  .header__title-color {
-    color: #2ecc71; }
-  .header__content {
-    display: none; }
-    @media (min-width: 768px) {
-      .header__content {
-        display: inline-block;
-        vertical-align: middle;
-        display: inline-block;
-        font-family: RobotoBold;
-        margin-left: 20px;
-        font-size: 16px; }
-        .header__content:hover {
-          color: #2ca260;
-          cursor: pointer; } }
-
-nav {
-  display: inline-block; }
-
-.interest__title {
-  display: inline-block;
-  text-align: left;
-  margin: 30px 10px;
-  background-color: #ffffff; }
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  height: 70px;
+  text-transform: uppercase; }
   @media (min-width: 768px) {
-    .interest__title {
-      margin: 30px 25px; } }
-  @media (min-width: 992px) {
-    .interest__title {
-      width: 255px;
-      margin: 70px 25px; } }
-  @media (min-width: 1200px) {
-    .interest__title {
-      width: 300px;
-      margin: 80px 25px; } }
-  .interest__title-item {
-    color: #566366;
-    margin-bottom: 15px;
-    font-family: RobotoBolt;
-    font-weight: 600;
-    font-size: 25px;
-    text-transform: uppercase;
-    text-align: center; }
-    @media (min-width: 768px) {
-      .interest__title-item {
-        font-size: 30px;
-        margin-bottom: 20px; } }
+    .header {
+      height: 79px; } }
+  .header__logo {
+    display: flex;
+    align-items: baseline; }
+    .header__logo-sing {
+      background-color: #4b5456;
+      padding: 4px 10px;
+      margin: 15px 25px;
+      font-family: RobotoBold;
+      font-size: 20px; }
+      @media (min-width: 768px) {
+        .header__logo-sing {
+          padding: 5px 12px;
+          font-size: 30px; } }
+    .header__logoItem {
+      display: inline-block;
+      font-family: RobotoBold;
+      font-size: 25px; }
+      @media (min-width: 992px) {
+        .header__logoItem {
+          font-size: 30px; } }
+      .header__logoItem-color {
+        color: #2ecc71; }
+  .header__content {
+    margin-right: 10px; }
+  .header__menu {
+    position: relative; }
+    .header__menu:hover > .header__menu-nav {
+      visibility: visible;
+      opacity: 1;
+      cursor: pointer; }
+    .header__menu-nav {
+      width: 155px;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      right: -15px;
+      top: 30px;
+      background-color: #252e30;
+      transition: .3s;
+      opacity: 0;
+      visibility: hidden;
+      cursor: pointer; }
+      @media (min-width: 414px) {
+        .header__menu-nav {
+          right: -26px; } }
+      @media (min-width: 768px) {
+        .header__menu-nav {
+          right: -38px; } }
+    .header__menu-Item {
+      margin: 15px; }
     @media (min-width: 992px) {
-      .interest__title-item {
-        display: inline-block; } }
-  .interest__title-context {
-    color: #b6b6b6;
-    font-family: RobotoRegular;
-    font-size: 18px; }
+      .header__menu {
+        display: none; } }
+  .header__navigation {
+    display: none; }
+    @media (min-width: 992px) {
+      .header__navigation {
+        display: block; } }
+
+.fas {
+  margin-right: 40px; }
+  @media (min-width: 414px) {
+    .fas {
+      margin-right: 30px; } }
+  @media (min-width: 768px) {
+    .fas {
+      margin-right: 18px; } }
+
+.interest {
+  text-align: center; }
+  .interest__title {
+    display: inline-block;
+    text-align: left;
+    margin: 30px 10px;
+    background-color: #ffffff; }
+    @media (min-width: 768px) {
+      .interest__title {
+        margin: 30px 25px; } }
+    @media (min-width: 992px) {
+      .interest__title {
+        width: 255px;
+        margin: 70px 25px; } }
+    @media (min-width: 1200px) {
+      .interest__title {
+        width: 300px;
+        margin: 80px 25px; } }
+    .interest__title-item {
+      color: #566366;
+      margin-bottom: 15px;
+      font-family: RobotoBolt;
+      font-weight: 600;
+      font-size: 25px;
+      text-transform: uppercase;
+      text-align: center; }
+      @media (min-width: 768px) {
+        .interest__title-item {
+          font-size: 30px;
+          margin-bottom: 20px; } }
+      @media (min-width: 992px) {
+        .interest__title-item {
+          display: inline-block; } }
+    .interest__title-context {
+      color: #b6b6b6;
+      font-family: RobotoRegular;
+      font-size: 18px; }
 
 .feature {
   background-color: #f2f2f1;
@@ -247,13 +288,15 @@ nav {
   .feature__title {
     display: inline-block;
     width: 300px;
-    vertical-align: top; }
+    vertical-align: top;
+    margin-top: 35px; }
     @media (min-width: 992px) {
       .feature__title {
         width: 240px; } }
     @media (min-width: 1200px) {
       .feature__title {
-        width: 300px; } }
+        width: 300px;
+        margin-top: 0; } }
   .feature__title-name {
     margin-bottom: 15px;
     font-family: RobotoBold;

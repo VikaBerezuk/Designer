@@ -1,69 +1,110 @@
 .header {
-    width: 100%;
     color: #ffffff;
     background-color: #252e30;
     position: sticky;
     top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 70px;
     text: {
         transform: uppercase;
-        align: center;
+    }
+    @media (min-width: 768px) {
+        height: 79px;
     }
 
-    &__mark {
-        display: inline-block;
-        background-color: #4b5456;
-        padding: 4px 10px;
-        margin: 10px 6px 10px -10px;
-        vertical-align: middle;
-        font: {
-            family: RobotoBold;
-            size: 20px;
+    &__logo {
+        display: flex;
+        align-items: baseline;
+        
+        &-sing {
+            background-color: #4b5456;
+            padding: 4px 10px;
+            margin: 15px 25px;
+            font: {
+                family: RobotoBold;
+                size: 20px;
+            }
+
+            @media (min-width: 768px) {
+                padding: 5px 12px;
+                font-size: 30px;
+            }
         }
 
-        @media (min-width: 768px) {
-            padding: 5px 12px;
-            margin: 15px 10px 15px -15px;
-            font-size: 30px;
-        }
-    }
-    &__title {
-        display: inline-block;
-        vertical-align: middle;
-        font: {
-            family: RobotoBold;
-            size: 25px;
-        }
-
-        @media (min-width: 768px) {
-        }
-        @media (min-width: 992px) {
-            font-size: 30px;
-            margin-right: 90px;
-        }
-        @media (min-width: 1200px) {
-        } 
-    }
-    &__title-color {
-        color: #2ecc71;
-    }
-    &__content {
-        display: none;
-
-        @media (min-width: 768px) {
+        &Item {
             display: inline-block;
-            vertical-align: middle;
-            display: inline-block;
-            font-family: RobotoBold;
-            margin-left: 20px;
-            font-size: 16px; 
-            
-            &:hover {
-                color: #2ca260;
-                cursor: pointer;
+            font: {
+                family: RobotoBold;
+                size: 25px;
+            }
+
+            @media (min-width: 992px) {
+                font-size: 30px;
+            }
+            @media (min-width: 1200px) {
+            } 
+
+            &-color {
+            color: #2ecc71;
             }
         }
     }
+    &__content {
+        @extend %link;
+        margin-right: 10px;
+    }  
+    &__menu {
+        position: relative;
+        &:hover > .header__menu-nav{
+            visibility: visible;
+            opacity: 1;
+            cursor: pointer;
+        }
+        &-nav {
+            width: 155px;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: -15px;
+            top: 30px;
+            background-color: #252e30;
+            transition: .3s;
+            opacity: 0;
+            visibility: hidden;
+            cursor: pointer;
+
+            @media (min-width: 414px) {
+                right: -26px;  
+            }  
+            @media (min-width: 768px) {
+                right: -38px;  
+            }
+        }
+        &-Item {
+            @extend %link;
+            margin: 15px;
+        }
+        @media (min-width: 992px) {
+            display: none;
+        }
+    }
+    &__navigation {
+        display: none;
+
+        @media (min-width: 992px) {
+            display: block;
+        }
+    }
 }
-nav {
-    display: inline-block;
+.fas {
+    margin-right: 40px;
+
+    @media (min-width: 414px) {
+        margin-right: 30px;
+    }
+    @media (min-width: 768px) {
+        margin-right: 18px;
+    }
 }

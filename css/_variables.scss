@@ -1,1 +1,12 @@
 $white: #ffffff;
+%link {
+    font: {
+        family: RobotoBold;
+        size: 16px; 
+    }
+
+    &:hover {
+        color: #2ca260;
+        cursor: pointer;
+    }
+}
