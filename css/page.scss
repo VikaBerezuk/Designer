@@ -77,63 +77,42 @@ h1 {
     } 
 
     &-a {
+        text-align: center;
         margin: -125px 0px 5px;
 
         @media (min-width: 414px) {
-            margin-top: -145px;
+            margin: -145px 0;
         }
         @media (min-width: 768px) {
-            margin-top: -200px;
-            margin-bottom: 7%;
+            margin: -200px 0 7%;
         }
         @media (min-width: 992px) {
-            margin-top: -295px;
-            margin-bottom: 10%;
+            margin: -295px 0 10%;
         }
         @media (min-width: 1200px) {
-            margin-top: -315px;
-            margin-bottom: 12%;
+            margin: -315px 0 12%;
         } 
     }
 
     &-item {
-        color: $white;
-        text-align: right;
-        margin-right: 13%;
-        margin-top: -9px;
-        font-size: 20px;
+        display: none;
+
+        @media (min-width: 1200px) {
+            display: block;
+            color: $white;
+            text-align: right;
+            margin-right: 13%;
+            margin-top: -9px;
+            font-size: 20px;
+        }
     }
 }
 .a {
-    display: inline-block;
-    font-size: 20px;
-    text-decoration: none;
+    @extend %a;
     color: $white;
-    margin-left: 35%;
-    border: 1px solid white;
-    padding: 8px 10px;
-
-    @media (min-width: 414px) {
-        margin-left: 37%;
-        padding: 10px 16px;
-    }
-    @media (min-width: 768px) {
-        margin-left: 40%;
-        padding: 14px 33px;
-    }
-    @media (min-width: 992px) {
-        font-size: 28px;
-        margin-left: 41%;
-        padding: 17px 40px;
-    }
-    @media (min-width: 1200px) {
-        font-size: 33px;
-        margin-left: 44%;
-        padding: 10px 20px;
-    }
-
     &:hover {
         background-color: #2ecc71;
         color: #252e30;
+        box-shadow: 5px 5px 5px;
     }
 }

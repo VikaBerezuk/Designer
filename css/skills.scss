@@ -1,0 +1,76 @@
+.skills {
+    margin-top: -125px;
+
+    @media (min-width: 992px) {
+        margin-top: 0;
+    }
+    &-a {
+        color: #2ecc71;
+        @extend %a;
+        &:hover {
+            background-color: #2ecc71;
+            color: #252e30;
+            box-shadow: 5px 5px 5px;
+        }
+    }
+    &-ahref {
+        margin: 30px 0;
+    }
+    &__text,
+    &__progress {
+        @media (min-width: 992px) {
+        display: inline-block;
+        width: 43%;
+        }
+    }
+    &__text {
+        float: left;
+
+        @media (min-width: 992px) {
+            margin: 0 50px;
+        }
+    }
+    &__progress {
+        margin: 125px 0;
+        &-content {
+        width: 325px;
+        height: 30px;
+        background: #f2f2f1;
+
+            @media (min-width: 414px) {
+                width: 340px;
+            }
+            @media (min-width: 768px) {
+                width: 670px;
+            }
+            @media (min-width: 992px) {
+                width: 390px;
+            }
+            @media (min-width: 1200px) {
+                width: 440px;
+            }
+        }
+
+        &-filled {
+            &-one {
+            width: 90%;
+            @extend %progress
+            }
+            &-two {
+                width: 80%;
+                @extend %progress
+            }
+            &-three {
+                width: 70%;
+                @extend %progress
+            }
+        }
+    }
+}
+h3 {
+    text-transform: uppercase;
+    font: {
+        size: 22px;
+        family: RobotoBold;
+    }
+}
