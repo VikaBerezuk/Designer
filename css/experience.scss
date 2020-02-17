@@ -1,0 +1,36 @@
+.experience {
+    border-bottom: 1px solid #cccccc;
+
+    &__content,
+    &__content-item {
+        @media (min-width: 992px) {
+            display: inline-block;
+            width: 45%;
+        }
+    }
+    &__content {
+        @media (min-width: 992px) {
+            float: left;
+        }
+        &-text {
+            display: table;
+            color: white;
+            background-color: #2ecc71;
+            padding: 14px;
+            margin-bottom: 30px;
+            cursor: pointer;
+            &:hover {
+                box-shadow: 3px 3px 5px #2ecc71;
+            }
+        }
+        &-item {
+            @media (min-width: 992px) {
+                margin: 155px 0 100px 25px;
+            }
+        }
+        &-border {
+            border-top: 1px solid #cccccc;
+            border-bottom: 1px solid #cccccc;
+        }
+    }
+}

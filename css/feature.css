@@ -13,7 +13,7 @@
         height: 733px; } }
     @media (min-width: 1200px) {
       .feature__img {
-        height: 666px;
+        height: 600px;
         width: 490px;
         margin-bottom: 0px; } }
   .feature-img {
@@ -24,19 +24,10 @@
     color: #919191;
     font-family: RobotoRegular;
     font-size: 16px; }
-    @media (min-width: 768px) {
-      .feature__text, .feature__textitem {
-        margin-bottom: 45px; } }
-    @media (min-width: 992px) {
-      .feature__text, .feature__textitem {
-        margin-bottom: 20px; } }
-    @media (min-width: 1200px) {
-      .feature__text, .feature__textitem {
-        margin-bottom: 35px; } }
   .feature__text {
     padding-left: 80px; }
     .feature__textitem {
-      margin-bottom: 30px; }
+      margin: 30px 0; }
   .feature__title {
     display: inline-block;
     width: 300px;
