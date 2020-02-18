@@ -32,13 +32,14 @@ $white: #ffffff;
     @media (min-width: 992px) {
         padding: 17px 40px;
     }
-    @media (min-width: 1200px) {
-        padding: 10px 20px;
+    @media (min-width: 1920px) {
+        padding: 20px 50px;
+        font-size: 23px;
     }
 }
 %progress {
     height: 30px;
-    color: #f2f2f1;
+    color: #ffffff;
     background: #2ecc71;
     text-align: right;
     padding-right: 15px;

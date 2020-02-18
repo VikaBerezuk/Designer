@@ -18,6 +18,9 @@
             width: 490px;
             margin-bottom: 0px;
         } 
+        @media (min-width: 1440px) {
+            height: 581px;
+        }
     }
     &-img {
         float: left;
@@ -52,6 +55,13 @@
             width: 300px;
             margin-top: 0;
         } 
+        @media (min-width: 1440px) {
+            width: 330px;
+            margin: 29px 0;
+        }
+        @media (min-width: 1920px) {
+            margin: 34px 77px;
+        }
     }
     &__title-name {
         margin-bottom: 15px;

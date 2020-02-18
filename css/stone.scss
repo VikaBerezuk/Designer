@@ -1,0 +1,27 @@
+.stone {
+    background-color: #f2f2f1;
+    text-align: center;
+    padding: 60px 0;
+
+    &__text {
+        color: #a4a4a4;
+        padding-bottom: 25px;
+        font: {
+            style: italic;
+            family: RobotoRegular;
+            size: 24px;
+        }
+        &-item {
+            color: #2ecc71;
+            font-size: 60px;
+        }
+    }
+}
+h4 {
+    color: #80898b;
+    text-transform: uppercase;
+    font: {
+        family: RobotoBold;
+        size: 18px;
+    }
+}

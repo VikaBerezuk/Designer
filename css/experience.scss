@@ -1,5 +1,8 @@
 .experience {
     border-bottom: 1px solid #cccccc;
+    &:last-child {
+       border-bottom: none;
+    }
 
     &__content,
     &__content-item {
@@ -20,6 +23,7 @@
             margin-bottom: 30px;
             cursor: pointer;
             &:hover {
+                transition-duration: 1s;
                 box-shadow: 3px 3px 5px #2ecc71;
             }
         }
