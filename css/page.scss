@@ -1,7 +1,9 @@
 * {
     box-sizing: border-box;
 }
-a {
+a,
+input {
+    color: white;
     text-decoration: none;
 }
 body {
@@ -22,7 +24,7 @@ body {
         max-width: 960px;
     }
     @media (min-width: 1200px) {
-        max-width: 1170px;
+        max-width: 1150px;
     } 
 }
 h1 {
@@ -132,10 +134,10 @@ h1 {
 .a {
     @extend %a;
     color: $white;
+    transition-duration: 3s;
     &:hover {
         background-color: #2ecc71;
         color: #252e30;
         box-shadow: 5px 5px 5px 5px;
-        transition-duration: 1s;
     }
 }

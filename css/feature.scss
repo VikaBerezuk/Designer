@@ -11,7 +11,7 @@
             width: 414px;
         }
         @media (min-width: 992px) {
-            height: 733px;
+            height: 743px;
         }
         @media (min-width: 1200px) {
             height: 600px;
@@ -39,7 +39,6 @@
 
         &item {
             margin: 30px 0;
-
         }
     }
     &__title {
@@ -49,18 +48,18 @@
         margin: 35px 0;
 
         @media (min-width: 992px) {
-            width: 240px;
+            width: 235px;
         }
         @media (min-width: 1200px) {
-            width: 300px;
+            width: 295px;
             margin-top: 0;
         } 
         @media (min-width: 1440px) {
             width: 330px;
-            margin: 29px 0;
+            margin: 23px 0;
         }
         @media (min-width: 1920px) {
-            margin: 34px 77px;
+            margin: 29px 0;
         }
     }
     &__title-name {

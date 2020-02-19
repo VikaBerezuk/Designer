@@ -5,7 +5,7 @@
     color: #2ca260;
     cursor: pointer; }
 
-.a, .skills-a {
+.a, .skills-a, .contact__input-a {
   display: inline-block;
   border: 1px solid;
   padding: 8px 10px;
@@ -14,16 +14,16 @@
   font-size: 18px;
   font-family: RobotoBold; }
   @media (min-width: 414px) {
-    .a, .skills-a {
+    .a, .skills-a, .contact__input-a {
       padding: 10px 16px; } }
   @media (min-width: 768px) {
-    .a, .skills-a {
+    .a, .skills-a, .contact__input-a {
       padding: 14px 33px; } }
   @media (min-width: 992px) {
-    .a, .skills-a {
+    .a, .skills-a, .contact__input-a {
       padding: 17px 40px; } }
   @media (min-width: 1920px) {
-    .a, .skills-a {
+    .a, .skills-a, .contact__input-a {
       padding: 20px 50px;
       font-size: 23px; } }
 
@@ -40,7 +40,9 @@
 * {
   box-sizing: border-box; }
 
-a {
+a,
+input {
+  color: white;
   text-decoration: none; }
 
 body {
@@ -61,7 +63,7 @@ body {
       max-width: 960px; } }
   @media (min-width: 1200px) {
     .container {
-      max-width: 1170px; } }
+      max-width: 1150px; } }
 
 h1 {
   display: inline;
@@ -158,21 +160,21 @@ h1 {
         font-size: 28px; } }
 
 .a {
-  color: #ffffff; }
+  color: #ffffff;
+  transition-duration: 3s; }
   .a:hover {
     background-color: #2ecc71;
     color: #252e30;
-    box-shadow: 5px 5px 5px 5px;
-    transition-duration: 1s; }
+    box-shadow: 5px 5px 5px 5px; }
 
 header,
 .header {
-  background-color: #252e30; }
+  background-color: #252e30;
+  position: sticky;
+  top: 0; }
 
 .header {
   color: #ffffff;
-  position: sticky;
-  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -299,7 +301,7 @@ header,
         width: 414px; } }
     @media (min-width: 992px) {
       .feature__img {
-        height: 733px; } }
+        height: 743px; } }
     @media (min-width: 1200px) {
       .feature__img {
         height: 600px;
@@ -327,18 +329,18 @@ header,
     margin: 35px 0; }
     @media (min-width: 992px) {
       .feature__title {
-        width: 240px; } }
+        width: 235px; } }
     @media (min-width: 1200px) {
       .feature__title {
-        width: 300px;
+        width: 295px;
         margin-top: 0; } }
     @media (min-width: 1440px) {
       .feature__title {
         width: 330px;
-        margin: 29px 0; } }
+        margin: 23px 0; } }
     @media (min-width: 1920px) {
       .feature__title {
-        margin: 34px 77px; } }
+        margin: 29px 0; } }
   .feature__title-name {
     margin-bottom: 15px;
     font-family: RobotoBold;
@@ -357,12 +359,12 @@ h2 {
     .skills {
       margin-top: 0; } }
   .skills-a {
-    color: #2ecc71; }
+    color: #2ecc71;
+    transition-duration: 3s; }
     .skills-a:hover {
       background-color: #2ecc71;
       color: #252e30;
-      box-shadow: 5px 5px 5px 5px;
-      transition-duration: 1s; }
+      box-shadow: 5px 5px 5px 5px; }
   .skills-ahref {
     padding: 30px 0; }
   @media (min-width: 992px) {
@@ -429,9 +431,9 @@ h3 {
     background-color: #2ecc71;
     padding: 14px;
     margin-bottom: 30px;
+    transition-duration: 1s;
     cursor: pointer; }
     .experience__content-text:hover {
-      transition-duration: 1s;
       box-shadow: 3px 3px 5px #2ecc71; }
   @media (min-width: 992px) {
     .experience__content-item {
@@ -452,12 +454,76 @@ h3 {
     font-size: 24px; }
     .stone__text-item {
       color: #2ecc71;
-      font-size: 60px; }
+      font-size: 60px;
+      cursor: pointer; }
+      .stone__text-item:hover {
+        color: #a8e0ec; }
 
 h4 {
   color: #80898b;
   text-transform: uppercase;
   font-family: RobotoBold;
   font-size: 18px; }
+
+.portfolio {
+  text-align: center; }
+  .portfolio__content {
+    padding: 60px 0; }
+  .portfolio-img {
+    width: 85%;
+    padding: 15px; }
+    @media (min-width: 992px) {
+      .portfolio-img {
+        width: 300px; } }
+    @media (min-width: 1200px) {
+      .portfolio-img {
+        width: 369px; } }
+
+.contact {
+  background: #252e30; }
+  @media (min-width: 992px) {
+    .contact__text, .contact__input {
+      display: inline-block;
+      width: 45%; } }
+  .contact__text {
+    float: left; }
+    @media (min-width: 992px) {
+      .contact__text {
+        margin-right: 70px; } }
+    .contact__text-color {
+      color: #ffffff;
+      margin-right: 50px; }
+    .contact__text-item {
+      margin: 7px 0;
+      color: #919191;
+      font-family: RobotoRegular;
+      font-size: 16px; }
+    .contact__text-inform {
+      padding: 40px 0; }
+  .contact__input {
+    padding: 110px 0 70px; }
+    .contact__input-text {
+      color: #ffffff;
+      margin: 40px 0 20px; }
+    .contact__input-a {
+      color: #ffffff;
+      background-color: #191f21;
+      transition-duration: 3s; }
+      .contact__input-a:hover {
+        background-color: #2ecc71;
+        color: #252e30;
+        box-shadow: 5px 5px 5px 5px; }
+    .contact__input-href {
+      padding: 30px 0; }
+    .contact__input-height {
+      height: 220px;
+      margin-bottom: 25px; }
+
+input {
+  width: 100%;
+  height: 50px;
+  background: #4b5456;
+  border: none;
+  text-decoration: none; }
 
 /*# sourceMappingURL=styles.css.map */

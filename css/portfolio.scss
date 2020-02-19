@@ -1,0 +1,17 @@
+.portfolio {
+    text-align: center;
+
+    &__content {
+        padding: 60px 0;
+    }
+    &-img {
+        width: 85%;
+        padding: 15px;
+        @media ( min-width: 992px) {
+            width: 300px;
+        }
+        @media ( min-width: 1200px) {
+            width: 369px;
+        }
+    }
+}

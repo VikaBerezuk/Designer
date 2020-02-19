@@ -21,9 +21,9 @@
             background-color: #2ecc71;
             padding: 14px;
             margin-bottom: 30px;
+            transition-duration: 1s;
             cursor: pointer;
             &:hover {
-                transition-duration: 1s;
                 box-shadow: 3px 3px 5px #2ecc71;
             }
         }
