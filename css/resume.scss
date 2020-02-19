@@ -1,8 +1,24 @@
 .Resume {
     text-align: center;
     background-color: #f2f2f1;
+    position: relative;
 
-    @media (min-width: 992px) {
-        padding: 20px;
+    &:after {
+        content: "";
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-top: 20px solid #f2f2f1;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__text {
+        @media (min-width: 992px) {
+            padding: 20px;
+        }
+
+        &-a {
+            padding-bottom: 90px;
+        }
     }
 }
