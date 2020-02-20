@@ -1,7 +1,6 @@
 .stone {
-    background-color: #f2f2f1;
     text-align: center;
-    padding: 60px 0;
+    padding-top: 60px;
 
     &__text {
         color: #a4a4a4;
@@ -11,22 +10,22 @@
             family: RobotoRegular;
             size: 24px;
         }
-        &-item {
-            color: #2ecc71;
-            font-size: 60px;
-            cursor: pointer;
-
-            &:hover {
-                color: #a8e0ec;
-            }
-        }
     }
 }
 h4 {
     color: #80898b;
     text-transform: uppercase;
+    padding-bottom: 10px;
     font: {
         family: RobotoBold;
         size: 18px;
+    }
+}
+.owl {
+    &-carousel {
+        background-color: #f2f2f1; 
+    }
+    &-theme {
+        padding-bottom: 100px;
     }
 }
