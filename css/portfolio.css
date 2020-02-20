@@ -1,0 +1,17 @@
+.portfolio {
+  text-align: center;
+  margin-top: -10px; }
+  @media (min-width: 992px) {
+    .portfolio__content {
+      padding: 30px 0 50px; } }
+  .portfolio-img {
+    width: 85%;
+    padding: 15px; }
+    @media (min-width: 992px) {
+      .portfolio-img {
+        width: 300px; } }
+    @media (min-width: 1200px) {
+      .portfolio-img {
+        width: 369px; } }
+
+/*# sourceMappingURL=portfolio.css.map */

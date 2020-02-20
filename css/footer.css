@@ -1,0 +1,21 @@
+footer {
+  background-color: #191f21;
+  color: #444d4f;
+  text-align: center;
+  padding: 50px 0; }
+
+.footer__text {
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-family: RobotoMedium; }
+.footer_img {
+  color: #191f21;
+  background-color: #4b5456;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 8px; }
+  .footer_img:hover {
+    color: white; }
+
+/*# sourceMappingURL=footer.css.map */

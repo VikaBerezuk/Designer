@@ -1,6 +1,6 @@
 .stone {
     text-align: center;
-    padding-top: 60px;
+    padding-top: 40px;
 
     &__text {
         color: #a4a4a4;
@@ -26,6 +26,9 @@ h4 {
         background-color: #f2f2f1; 
     }
     &-theme {
-        padding-bottom: 100px;
+        padding-bottom: 50px;
+    }
+    &-dots > .active {
+        outline: none;
     }
 }

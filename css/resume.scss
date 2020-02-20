@@ -14,11 +14,15 @@
     }
     &__text {
         @media (min-width: 992px) {
-            padding: 20px;
+            padding: 0 20px;
         }
 
         &-a {
-            padding-bottom: 90px;
+            padding-bottom: 50px;
+
+            @media (min-width: 1200px) {
+                padding-bottom: 80px;
+            }
         }
     }
 }

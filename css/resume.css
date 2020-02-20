@@ -1,0 +1,22 @@
+.Resume {
+  text-align: center;
+  background-color: #f2f2f1;
+  position: relative; }
+  .Resume:after {
+    content: "";
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 20px solid #f2f2f1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); }
+  @media (min-width: 992px) {
+    .Resume__text {
+      padding: 0 20px; } }
+  .Resume__text-a {
+    padding-bottom: 50px; }
+    @media (min-width: 1200px) {
+      .Resume__text-a {
+        padding-bottom: 80px; } }
+
+/*# sourceMappingURL=resume.css.map */
