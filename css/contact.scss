@@ -34,15 +34,11 @@
     &__input {
         padding: 110px 0 60px;
 
-        &-text {
-            color: #ffffff;
-            margin: 40px 0 20px;
-        }
         &-a {
             color: #ffffff;
             background-color: #191f21;
             @extend %a;
-            transition-duration: 3s;
+            transition-duration: 1s;
             &:hover {
                 background-color: #2ecc71;
                 color: #252e30;
@@ -54,7 +50,8 @@
         }
         &-height {
             width: 100%;
-            padding: 20px 10px 200px;
+            height: 200px;
+            padding: 20px 10px;
             margin-bottom: 25px;
         }
     }
@@ -65,7 +62,7 @@ input {
 input, textarea {
     width: 100%;
     background: #4b5456;
-    border: none;
+    border: 1px solid #252e30;
     text-decoration: none;
     outline: none;
     color: #2ecc71;
@@ -82,4 +79,13 @@ input, textarea {
         color: #2ecc71;
         border: 1px solid #2ecc71;
     }
+}
+textarea {
+    resize: none;
+}
+label {
+    color: #ffffff;
+    margin: 33px 0 15px;
+    display: block;
+    cursor: pointer;
 }

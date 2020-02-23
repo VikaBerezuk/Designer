@@ -161,7 +161,7 @@ h1 {
 
 .a {
   color: #ffffff;
-  transition-duration: 3s; }
+  transition-duration: 1s; }
   .a:hover {
     background-color: #2ecc71;
     color: #252e30;
@@ -388,7 +388,7 @@ h2 {
       margin-top: 0; } }
   .skills-a {
     color: #2ecc71;
-    transition-duration: 3s; }
+    transition-duration: 1s; }
     .skills-a:hover {
       background-color: #2ecc71;
       color: #252e30;
@@ -514,18 +514,100 @@ h4 {
 .portfolio {
   text-align: center;
   margin-top: -10px; }
-  @media (min-width: 992px) {
-    .portfolio__content {
-      padding: 30px 0 50px; } }
-  .portfolio-img {
-    width: 85%;
-    padding: 15px; }
+  .portfolio__projects {
+    display: flex;
+    flex-wrap: wrap; }
     @media (min-width: 992px) {
-      .portfolio-img {
-        width: 300px; } }
+      .portfolio__projects {
+        padding: 30px 0 50px; } }
+  .portfolio__projectWrapper {
+    width: 290px;
+    height: 240px;
+    position: relative;
+    margin: 20px;
+    transition: 0.5s; }
+    @media (min-width: 414px) {
+      .portfolio__projectWrapper {
+        width: 300px;
+        height: 255px; } }
+    @media (min-width: 992px) {
+      .portfolio__projectWrapper {
+        width: 269px;
+        height: 220px; } }
     @media (min-width: 1200px) {
-      .portfolio-img {
-        width: 369px; } }
+      .portfolio__projectWrapper {
+        width: 333px;
+        height: 280px; } }
+    .portfolio__projectWrapper:hover > .portfolio__projectOwverlay {
+      opacity: 0.7;
+      visibility: visible; }
+  .portfolio__projectOwverlay {
+    background-color: #30a765;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: hidden; }
+  .portfolio__projectIcon {
+    color: #ffffff;
+    font-size: 35px;
+    line-height: 300px;
+    text-align: center; }
+
+.portfolio__project1 {
+  background-image: url("../img/project1.png");
+  width: 100%;
+  height: 100%;
+  background-size: cover; }
+
+.portfolio__project2 {
+  background-image: url("../img/project2.png");
+  width: 100%;
+  height: 100%;
+  background-size: cover; }
+
+.portfolio__project3 {
+  background-image: url("../img/project3.png");
+  width: 100%;
+  height: 100%;
+  background-size: cover; }
+
+.portfolio__project4 {
+  background-image: url("../img/project4.png");
+  width: 100%;
+  height: 100%;
+  background-size: cover; }
+
+.portfolio__project5 {
+  background-image: url("../img/project5.png");
+  width: 100%;
+  height: 100%;
+  background-size: cover; }
+
+.portfolio__project6 {
+  background-image: url("../img/project6.png");
+  width: 100%;
+  height: 100%;
+  background-size: cover; }
+
+.portfolio__project7 {
+  background-image: url("../img/project7.png");
+  width: 100%;
+  height: 100%;
+  background-size: cover; }
+
+.portfolio__project8 {
+  background-image: url("../img/project8.png");
+  width: 100%;
+  height: 100%;
+  background-size: cover; }
+
+.portfolio__project9 {
+  background-image: url("../img/project9.png");
+  width: 100%;
+  height: 100%;
+  background-size: cover; }
 
 .contact {
   background: #252e30;
@@ -551,13 +633,10 @@ h4 {
       padding: 40px 0; }
   .contact__input {
     padding: 110px 0 60px; }
-    .contact__input-text {
-      color: #ffffff;
-      margin: 40px 0 20px; }
     .contact__input-a {
       color: #ffffff;
       background-color: #191f21;
-      transition-duration: 3s; }
+      transition-duration: 1s; }
       .contact__input-a:hover {
         background-color: #2ecc71;
         color: #252e30;
@@ -566,7 +645,8 @@ h4 {
       padding: 30px 0 10px; }
     .contact__input-height {
       width: 100%;
-      padding: 20px 10px 200px;
+      height: 200px;
+      padding: 20px 10px;
       margin-bottom: 25px; }
 
 input {
@@ -575,7 +655,7 @@ input {
 input, textarea {
   width: 100%;
   background: #4b5456;
-  border: none;
+  border: 1px solid #252e30;
   text-decoration: none;
   outline: none;
   color: #2ecc71;
@@ -590,6 +670,15 @@ input, textarea {
     color: #2ecc71;
     border: 1px solid #2ecc71; }
 
+textarea {
+  resize: none; }
+
+label {
+  color: #ffffff;
+  margin: 33px 0 15px;
+  display: block;
+  cursor: pointer; }
+
 footer {
   background-color: #191f21;
   color: #444d4f;
@@ -602,11 +691,15 @@ footer {
   font-size: 16px;
   font-family: RobotoMedium; }
 .footer_img {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  line-height: 35px;
   color: #191f21;
   background-color: #4b5456;
-  padding: 10px;
   border-radius: 50%;
-  margin-right: 8px; }
+  margin-right: 5px;
+  transition: .5s; }
   .footer_img:hover {
     color: white; }
 

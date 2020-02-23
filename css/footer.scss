@@ -14,11 +14,15 @@ footer {
         }
     }
     &_img {
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+        line-height: 35px;
         color: #191f21;
         background-color: #4b5456;
-        padding: 10px;
         border-radius: 50%;
-        margin-right: 8px;
+        margin-right: 5px;
+        transition: .5s;
 
         &:hover {
             color: white;

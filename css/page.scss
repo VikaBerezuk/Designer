@@ -134,7 +134,7 @@ h1 {
 .a {
     @extend %a;
     color: $white;
-    transition-duration: 3s;
+    transition-duration: 1s;
     &:hover {
         background-color: #2ecc71;
         color: #252e30;

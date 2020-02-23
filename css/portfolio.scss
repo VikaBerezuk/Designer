@@ -2,19 +2,62 @@
     text-align: center;
     margin-top: -10px;
 
-    &__content {
+    &__projects {
+        display: flex;
+        flex-wrap: wrap;
+    
         @media ( min-width: 992px) {
             padding: 30px 0 50px;
         }
     }
-    &-img {
-        width: 85%;
-        padding: 15px;
-        @media ( min-width: 992px) {
-            width: 300px;
+    &__project {
+        &Wrapper {
+            width: 290px;
+            height: 240px;
+            position: relative;
+            margin: 20px;
+            transition: 0.5s;
+
+            @media ( min-width: 414px) {
+                width: 300px;
+                height: 255px;
+            }
+            @media ( min-width: 992px) {
+                width: 269px;
+                height: 220px;
+            }
+            @media ( min-width: 1200px) {
+                width: 333px;
+                height: 280px;
+            }
+
+            &:hover > .portfolio__projectOwverlay {
+                opacity: 0.7;
+                visibility: visible;
+            }
         }
-        @media ( min-width: 1200px) {
-            width: 369px;
+        &Owverlay {
+            background-color: #30a765;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            visibility: hidden;
         }
+        &Icon {
+            color: #ffffff;
+            font-size: 35px;
+            line-height: 300px;
+            text-align: center;
+        }
+    }
+}
+@for $project from 1 through 9 {
+    .portfolio__project#{$project} {
+        background-image: url("../img/project#{$project}.png");
+        width: 100%;
+        height: 100%;
+        background-size: cover;
     }
 }
