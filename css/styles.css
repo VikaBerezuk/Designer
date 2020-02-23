@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header__content, .header__menu-Item {
   font-family: RobotoBold;
   font-size: 16px; }
@@ -678,6 +679,13 @@ label {
   margin: 33px 0 15px;
   display: block;
   cursor: pointer; }
+  label::after {
+    content: "✯";
+    font-size: 7px;
+    color: #919191;
+    position: relative;
+    top: -5px;
+    left: 3px; }
 
 footer {
   background-color: #191f21;

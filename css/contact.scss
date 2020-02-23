@@ -88,4 +88,13 @@ label {
     margin: 33px 0 15px;
     display: block;
     cursor: pointer;
+
+    &::after {
+        content: "✯";
+        font-size: 7px;
+        color: #919191;
+        position: relative;
+        top: -5px;
+        left: 3px;
+    }
 }
