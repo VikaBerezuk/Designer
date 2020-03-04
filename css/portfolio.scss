@@ -16,7 +16,7 @@
             height: 240px;
             position: relative;
             margin: 20px;
-            transition: 0.5s;
+            transition: 2s;
 
             @media ( min-width: 414px) {
                 width: 300px;
@@ -32,24 +32,18 @@
             }
 
             &:hover > .portfolio__projectOwverlay {
-                
-                
+                opacity: 1;  
+                background-color: rgba(43, 162, 95, 0.5);
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                transition: 0.3s ease;
             }
         }
         &Owverlay {
-            background-color: rgba(43, 162, 95, 0.5);
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
             opacity: 0;
-            transition: .5s linear .5s;
-
-            &:hover {
-                opacity: 1;
-                
-            }
         }
         &Icon {
             color: #ffffff;
